@@ -13,18 +13,18 @@ nnoremap <F3> :set hlsearch!<CR>
 nmap <silent> cp "_cw<C-R>"<Esc>
 
 " github repos for vim plugins
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jlanzarotta/bufexplorer'
-Bundle 'yegappan/mru'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-vividchalk'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'yegappan/mru'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-vividchalk'
  
 " vim-scripts repos
-Bundle 'EasyGrep'
+Plugin 'EasyGrep'
  
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
  
 filetype plugin indent on
  
