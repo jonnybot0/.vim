@@ -1,16 +1,10 @@
-set nocompatible
-set autoindent
+set nocompatible "be iMproved
+
+"Configure Vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-set nowrap
-set number
-set tabstop=4 "This makes tabs work more like Sublimte Text, so the text lines up.
-set shiftwidth=4
-set expandtab
-"Toggle highlighting with F3 (below)
-nnoremap <F3> :set hlsearch!<CR> 
-nmap <silent> cp "_cw<C-R>"<Esc>
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " github repos for vim plugins
 Plugin 'gmarik/vundle'
@@ -26,8 +20,21 @@ Plugin 'EasyGrep'
 " non github repos
 Plugin 'git://git.wincent.com/command-t.git'
  
+call vundle#end()
 filetype plugin indent on
  
+"Formatting optiond
+set autoindent
+set nowrap
+set number
+set tabstop=4 "This makes tabs work more like Sublimte Text, so the text lines up.
+set shiftwidth=4
+set expandtab
+
+"Toggle highlighting with F3 (below)
+nnoremap <F3> :set hlsearch!<CR> 
+nmap <silent> cp "_cw<C-R>"<Esc>
+
  
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
